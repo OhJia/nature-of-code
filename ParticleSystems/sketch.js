@@ -10,6 +10,7 @@ function setup() {
 function draw() {
   background(0);
   
+  ps.updateOrigin();
   ps.addParticle();
   ps.run();
   // ps2.addParticle();

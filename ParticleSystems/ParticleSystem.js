@@ -10,6 +10,10 @@ function ParticleSystem(origin) {
 		}
 		
 	}
+
+	this.updateOrigin = function() {
+		this.origin = createVector(mouseX, mouseY);
+	}
 	
     this.run = function(){
     	for (var i = 0; i < this.particle.length; i++){
