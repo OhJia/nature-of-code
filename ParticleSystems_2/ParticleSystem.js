@@ -10,6 +10,7 @@ function ParticleSystem(position) {
 		for (var i = 0; i < this.rows * this.cols; i++) {
 			var newPos = createVector(this.position.x, this.position.y);
 			this.particles.push(new Particle(newPos, random(2,15)));
+			console.log(this.particles[i].mass);
 		}		
 	}
 
